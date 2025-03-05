@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan 1 Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">SoleNica</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Brand</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Overlay Menu -->
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="category.html">Brand</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById("overlay").classList.toggle("active");
+        }
+    </script>
+            
+    <!-- Jordan 1 Shoes Section -->
+    <section class="shoe-list">
+        <h1 class="shoe-title">Nike Zoom Freak 2 Collection</h1>
+        <div class="shoe-container">
+            <!-- Shoe Item 1 -->
+            <div class="shoe-item">
+                <img src="images/f2-gtf.jpg" alt="Nike Zoom Freak 2">
+                <div class="shoe-info">
+                    <p class="shoe-name">Nike Zoom Freak 2 - Bright Crimson Fire</p>
+                    <p class="shoe-price">PHP 2,199.00</p>
+                    <a href="images/f2-gtf.jpg" download class="download-btn">Download Image</a>
+                </div>
+            </div>
+
+            <!-- Shoe Item 2 -->
+            <div class="shoe-item">
+                <img src="images/f2-whc.jpg" alt="Nike Zoom Freak 2">
+                <div class="shoe-info">
+                    <p class="shoe-name">Nike Zoom Freak 2 - White Cement</p>
+                    <p class="shoe-price">PHP 2,199.00</p>
+                    <a href="images/f2-whc.jpg" download class="download-btn">Download Image</a>
+                </div>
+            </div>
+
+            <!-- Shoe Item 3 -->
+            <div class="shoe-item">
+                <img src="images/f2-bmg.jpg" alt="Nike Zoom Freak 2">
+                <div class="shoe-info">
+                    <p class="shoe-name">Nike Zoom Freak 2 - Bright Mango</p>
+                    <p class="shoe-price">PHP 2,199.00</p>
+                    <a href="images/f2-bmg.jpg" download class="download-btn">Download Image</a>
+                </div>
+            </div>
+
+            <!-- Shoe Item 4 -->
+            <div class="shoe-item">
+                <img src="images/f2-tax.jpg" alt="Nike Zoom Freak 2">
+                <div class="shoe-info">
+                    <p class="shoe-name">Nike Zoom Freak 2 - Taxi</p>
+                    <p class="shoe-price">PHP 2,199.00</p>
+                    <a href="images/f2-tax.jpg" download class="download-btn">Download Image</a>
+                </div>
+            </div>
+
+            <!-- Shoe Item 5 -->
+            <div class="shoe-item">
+                <img src="images/f2-ltb.jpg" alt="Nike Zoom Freak 2">
+                <div class="shoe-info">
+                    <p class="shoe-name">Nike Zoom Freak 2 - Letter Bro</p>
+                    <p class="shoe-price">PHP 2,199.00</p>
+                    <a href="images/f2-ltb.jpg" download class="download-btn">Download Image</a>
+                </div>
+            </div>
+
+            <!-- Shoe Item 6 -->
+            <div class="shoe-item">
+                <img src="images/f2-dnm.jpg" alt="Nike Zoom Freak 2">
+                <div class="shoe-info">
+                    <p class="shoe-name">Nike Zoom Freak 2 - Denim</p>
+                    <p class="shoe-price">PHP 2,199.00</p>
+                    <a href="images/f2-dnm.jpg" download class="download-btn">Download Image</a>
+                </div>
+            </div>
+
+            <!-- Shoe Item 7 -->
+            <div class="shoe-item">
+                <img src="images/f2-nja.jpg" alt="Nike Zoom Freak 2">
+                <div class="shoe-info">
+                    <p class="shoe-name">Nike Zoom Freak 2 - Naija</p>
+                    <p class="shoe-price">PHP 2,199.00</p>
+                    <a href="images/f2-nja.jpg" download class="download-btn">Download Image</a>
+                </div>
+            </div>
+
+            <!-- Duplicate this block for more shoe variants -->
+        </div>
+    </section>
+
+</body>
+</html>
