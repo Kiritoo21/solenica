@@ -7,6 +7,7 @@
     font-family: Arial, sans-serif;
 }
 
+/* ===== NAVIGATION BAR ======================================================================= */
 nav {
     background: #222;
     padding: 15px 20px;
@@ -29,6 +30,7 @@ nav {
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
+/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
@@ -43,17 +45,32 @@ nav {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    padding: 12px 15px; /* Ensures hover highlight covers full height */
+    display: block;
+    transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+    background: lightgrey; /* Highlight effect */
+    color: black;
 }
 
 /* Mobile Menu Icon */
 .menu-icon {
     display: none;
-    font-size: 24px;
+    font-size: 28px;
     color: white;
     cursor: pointer;
+    padding: 10px;
+    transition: background 0.3s;
 }
 
-/* Mobile Overlay */
+.menu-icon:hover {
+    background: lightgrey; /* Hover effect for hamburger icon */
+    color: black;
+}
+
+/* =============== MOBILE OVERLAY MENU =============== */
 .overlay {
     position: fixed;
     top: 0;
@@ -81,10 +98,13 @@ nav {
     color: white;
     font-size: 24px;
     text-decoration: none;
+    padding: 15px;
+    transition: background 0.3s;
 }
 
 .overlay-content a:hover {
-    text-decoration: underline;
+    background: lightgrey; /* Hover effect for mobile links */
+    color: black;
 }
 
 /* Close Button */
