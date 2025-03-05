@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan 1 Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">SoleNica</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Brand</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Overlay Menu -->
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="category.html">Brand</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById("overlay").classList.toggle("active");
+        }
+    </script>
+            
+    <!-- Jordan 1 Shoes Section -->
+    <section class="shoe-list">
+        <h1 class="shoe-title">Jordan 1 Low x Travis Scott</h1>
+        <div class="shoe-container">
+            <!-- Shoe Item 1 -->
+            <div class="shoe-item">
+                <img src="images/jlt-bp.jpg" alt="Jordan 1">
+                <div class="shoe-info">
+                    <p class="shoe-name">Jordan 1 Low x Travis Scott - Black Phantom</p>
+                    <p class="shoe-price">PHP 2,099.00</p>
+                    <a href="images/jlt-bp.jpg" download class="download-btn">Download Image</a>
+                </div>
+            </div>
+
+            <!-- Shoe Item 2 -->
+            <div class="shoe-item">
+                <img src="images/jlt-ssp.jpg" alt="Jordan 1">
+                <div class="shoe-info">
+                    <p class="shoe-name">Jordan 1 Low x Travis Scott - Shy Pink</p>
+                    <p class="shoe-price">PHP 2,099.00</p>
+                    <a href="images/jlt-ssp.jpg" download class="download-btn">Download Image</a>
+                </div>
+            </div>
+
+            <!-- Shoe Item 3 -->
+            <div class="shoe-item">
+                <img src="images/jlt-chg.jpg" alt="Jordan 1">
+                <div class="shoe-info">
+                    <p class="shoe-name">Jordan 1 Low x Travis Scott - Chicago</p>
+                    <p class="shoe-price">PHP 2,099.00</p>
+                    <a href="images/jlt-chg.jpg" download class="download-btn">Download Image</a>
+                </div>
+            </div>
+
+            <!-- Shoe Item 4 -->
+            <div class="shoe-item">
+                <img src="images/jlt-dmc.jpg" alt="Jordan 1">
+                <div class="shoe-info">
+                    <p class="shoe-name">Jordan 1 Low x Travis Scott - Dark Mocha</p>
+                    <p class="shoe-price">PHP 2,099.00</p>
+                    <a href="images/jlt-dmc.jpg" download class="download-btn">Download Image</a>
+                </div>
+            </div>
+
+            <!-- Shoe Item 5 -->
+            <div class="shoe-item">
+                <img src="images/jlt-f.jpg" alt="Jordan 1">
+                <div class="shoe-info">
+                    <p class="shoe-name">Jordan 1 Low x Travis Scott - Fragment</p>
+                    <p class="shoe-price">PHP 2,099.00</p>
+                    <a href="images/jlt-f.jpg" download class="download-btn">Download Image</a>
+                </div>
+            </div>
+
+            <!-- Duplicate this block for more shoe variants -->
+        </div>
+    </section>
+
+</body>
+</html>

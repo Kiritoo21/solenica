@@ -1,0 +1,409 @@
+/* ===== HOME TAB CSS ================================================================================================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background: #222;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 75px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay.active {
+    display: flex;
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.overlay-content a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.overlay-content a:hover {
+    text-decoration: underline;
+}
+
+/* Close Button */
+.close-btn {
+    font-size: 36px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+/* Responsive - Mobile View */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+.hot-sales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Always fits screen height */
+    width: 100vw; /* Always fits screen width */
+    padding-top: 50px; /* Adjust for navbar */
+    overflow: hidden;
+}
+
+.hot-sales-wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+.hot-sales-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hot-sales-container {
+    display: flex;
+    width: 80vw; /* White space on both sides */
+    height: 70vh; /* Adjusts dynamically to prevent scrolling */
+    gap: 1vw; /* Responsive spacing */
+    margin: 0 auto; /* Centers container for symmetry */
+}
+
+.portrait {
+    flex: 2;
+    height: 100%;
+}
+
+.portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the space */
+    border-radius: 10px;
+}
+
+.hot-side {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    justify-content: space-between;
+    gap: 1vw;
+    height: 100%;
+}
+
+.landscape {
+    flex: 1;
+    height: 50%;
+}
+
+.landscape img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills space */
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    .hot-sales {
+        height: auto;
+        padding-top: 100px;
+    }
+
+    .hot-sales-container {
+        flex-direction: column;
+        height: auto;
+        width: 100vw; /* Remove white space in mobile */
+        margin: 0; /* Remove margins */
+    }
+
+    .portrait, .landscape {
+        width: 100%;
+        height: auto;
+    }
+
+    .portrait img, .landscape img {
+        object-fit: cover;
+    }
+}
+
+/* ===== CATEGORY TAB CSS ========================================================================================================================================= */
+
+.category {
+    text-align: center;
+    padding-top: 80px; /* Adjust for fixed navbar */
+}
+
+.category-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.category-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 15px;
+}
+
+.category-btn {
+    display: block;
+    padding: 12px;
+    background: #444;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.category-btn:hover {
+    background: #222;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .category-container {
+        flex-direction: column;
+        width: 90vw;
+        gap: 10px;
+    }
+
+    .category-column {
+        width: 100%;
+    }
+}
+
+/* ===== VARIANT LISTS ================================================================================================================================================ */
+
+/* =========================== */
+/* Shoe List Page - Jordan 1 */
+/* =========================== */
+.shoe-list {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.shoe-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.shoe-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    justify-content: center;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.shoe-item {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shoe-item img {
+    width: 100px; /* Fixed image size */
+    height: 100px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.shoe-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.shoe-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.shoe-price {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    width: 100%; /* Button stretches full width */
+    text-align: center;
+}
+
+.download-btn:hover {
+    background: #0056b3;
+}
+
+/* Responsive - Mobile View */
+@media (max-width: 768px) {
+    .shoe-container {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .shoe-item {
+        flex-direction: row; /* Keep image left, details right */
+        text-align: left;
+        padding: 10px;
+    }
+
+    .shoe-item img {
+        width: 80px; /* Slightly smaller on mobile */
+        height: 80px;
+        margin-right: 10px;
+    }
+
+    .download-btn {
+        margin-top: 5px;
+        width: 100%; /* Stretch button to full width */
+    }
+}
+
+/* ===== ABOUT PAGE =================================================================================================================================================== */
+
+/* =========================== */
+/* About Page Styles */
+/* =========================== */
+.about {
+    max-width: 800px;
+    margin: 80px auto 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.about h2 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+.about p, .about ul {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about ul li {
+    margin: 5px 0;
+}
+
+.transaction-box {
+    border: 2px dashed #007bff;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: left;
+    background: #f9f9f9;
+}
+
+.transaction-box p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+.highlight {
+    color: red;
+    font-weight: bold;
+}

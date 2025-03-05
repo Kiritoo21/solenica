@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan 1 Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">SoleNica</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Brand</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Overlay Menu -->
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="category.html">Brand</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById("overlay").classList.toggle("active");
+        }
+    </script>
+            
+    <!-- Jordan 1 Shoes Section -->
+    <section class="shoe-list">
+        <h1 class="shoe-title">Jordan 1 High Collection</h1>
+        <div class="shoe-container">
+            <!-- Shoe Item 1 -->
+            <div class="shoe-item">
+                <img src="images/jh-laf.jpg" alt="Jordan 1 Lost and Found">
+                <div class="shoe-info">
+                    <p class="shoe-name">Jordan 1 Retro High OG - Chicago Lost and Found</p>
+                    <p class="shoe-price">PHP 2,199.00</p>
+                    <a href="images/jh-laf.jpg" download class="download-btn">Download Image</a>
+                </div>
+            </div>
+
+            <!-- Shoe Item 2 -->
+            <div class="shoe-item">
+                <img src="images/jh-rhb.jpg" alt="Jordan 1 Bloodline">
+                <div class="shoe-info">
+                    <p class="shoe-name">Jordan 1 Retro High - Bloodline</p>
+                    <p class="shoe-price">PHP 2,199.00</p>
+                    <a href="images/jh-rhb.jpg" download class="download-btn">Download Image</a>
+                </div>
+            </div>
+
+            <!-- Duplicate this block for more shoe variants -->
+        </div>
+    </section>
+
+</body>
+</html>

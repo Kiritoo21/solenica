@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store - Category</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">SoleNica</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Brand</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Overlay Menu -->
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="category.html">Brand</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById("overlay").classList.toggle("active");
+        }
+    </script>
+            
+    <!-- Category Section -->
+    <section class="category">
+        <h1 class="category-title">Select a Brand</h1>
+        <div class="category-container">
+            <!-- Column 1 -->
+            <div class="category-column">
+                <a href="jordan1.html" class="category-btn">Jordan 1 High</a>
+                <a href="jordan1low.html" class="category-btn">Jordan 1 Low</a>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="category-column">
+                <a href="jordantravislow.html" class="category-btn">Jordan 1 Low x Travis Scott</a>
+                <a href="jordan4.html" class="category-btn">Jordan 4</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
